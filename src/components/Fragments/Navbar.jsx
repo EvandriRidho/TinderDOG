@@ -2,7 +2,11 @@ import Button from "../Elements/Button/button";
 
 let Navbar = () => {
   const handleLogin = () => {
-    console.log("Login");
+    window.location.href = "/login";
+  };
+
+  const handleSignUp = () => {
+    window.location.href = "/register";
   };
   return (
     <nav className="bg-gradient-to-r from-red-500 to-blue-400 h-24 mb-12">
@@ -15,7 +19,10 @@ let Navbar = () => {
           >
             Login
           </Button>
-          <Button classname="bg-black md:mx-2 lg:mx-4 hover:bg-slate-500">
+          <Button
+            classname="bg-black md:mx-2 lg:mx-4 hover:bg-slate-500"
+            onClick={handleSignUp}
+          >
             Sign Up
           </Button>
         </div>
