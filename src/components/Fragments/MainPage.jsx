@@ -1,5 +1,3 @@
-import Images from "../Elements/images-mainpage/images";
-
 let MainPage = () => {
   return (
     <div className="mt-36 mb-12">
@@ -17,19 +15,26 @@ let MainPage = () => {
         <p>Pebbles, New York</p>
         <div className="flex my-16">
           <div className="w-full sm:flex">
-            <Images
+            <img
               src="./../../../public/images/techcrunch.png"
               alt="techcrunch"
+              className="my-14 md:mx-12"
             />
-            <Images
+            <img
               src="./../../../public/images/mashable.png"
-              alt="Mashable"
+              alt="mashable"
+              className="my-14 md:mx-12"
             />
-            <Images
+            <img
               src="./../../../public/images/bizinsider.png"
               alt="bizinsider"
+              className="my-14 md:mx-12"
             />
-            <Images src="./../../../public/images/tnw.png" alt="tnw" />
+            <img
+              src="./../../../public/images/tnw.png"
+              alt="tnw"
+              className="my-14 md:mx-12"
+            />
           </div>
         </div>
       </div>
