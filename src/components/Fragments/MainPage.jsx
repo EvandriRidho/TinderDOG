@@ -16,25 +16,21 @@ let MainPage = () => {
         <div className="flex my-16">
           <div className="w-full sm:flex">
             <img
-              src="./../../../public/images/techcrunch.png"
+              src="./images/techcrunch.png"
               alt="techcrunch"
               className="my-14 md:mx-12"
             />
             <img
-              src="./../../../public/images/mashable.png"
+              src="./images/mashable.png"
               alt="mashable"
               className="my-14 md:mx-12"
             />
             <img
-              src="./../../../public/images/bizinsider.png"
+              src="./images/bizinsider.png"
               alt="bizinsider"
               className="my-14 md:mx-12"
             />
-            <img
-              src="./../../../public/images/tnw.png"
-              alt="tnw"
-              className="my-14 md:mx-12"
-            />
+            <img src="./images/tnw.png" alt="tnw" className="my-14 md:mx-12" />
           </div>
         </div>
       </div>
