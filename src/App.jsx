@@ -1,14 +1,7 @@
-import { Fragment } from "react";
-import Feautures from "../../TinderDOG-APP/src/components/Fragments/Features";
-import Navbar from "../../TinderDOG-APP/src/components/Fragments/Navbar";
+import HomePage from "./pages/HomePage";
 
 let App = () => {
-  return (
-    <Fragment>
-      <Navbar />
-      <Feautures />
-    </Fragment>
-  );
+  return <HomePage />;
 };
 
 export default App;
