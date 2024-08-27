@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../Elements/Button/button";
+import Button from "../Elements/Button/Button";
 import InputForm from "../Elements/Input/Index";
 
 let LoginForm = () => {
