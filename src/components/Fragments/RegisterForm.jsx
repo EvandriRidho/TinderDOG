@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from "../Elements/Button/Button.jsx";
 import InputForm from "../Elements/Input/Index";
 
 const RegisterForm = () => {
@@ -40,7 +39,9 @@ const RegisterForm = () => {
         placeholder="***********"
       />
 
-      <Button>Sign Up</Button>
+      <button className="bg-black text-white h-10  rounded-md mt-4 hover:bg-slate-600">
+        Sign Up
+      </button>
 
       <p className="text-slate-500 text-center">
         have a account?{" "}

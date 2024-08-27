@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Button from "../Elements/Button/Button";
 import InputForm from "../Elements/Input/Index";
 
 let LoginForm = () => {
@@ -28,7 +27,9 @@ let LoginForm = () => {
         Forget Password
       </a>
 
-      <Button>Login</Button>
+      <button className="bg-black text-white h-10  rounded-md hover:bg-slate-600">
+        Login
+      </button>
 
       <p className="text-slate-500 text-center">
         Dont have a account?{" "}
