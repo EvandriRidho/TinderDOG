@@ -1,5 +1,9 @@
 let PricingCard = (props) => {
   const { title, price, list1, list2, list3 } = props;
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    window.location.href = "/register";
+  };
   return (
     <div className="flex justify-center w-full px-4 mb-12 lg:w-1/3">
       <div className="w-full bg-white rounded-lg shadow-lg p-6 mx-2 border border-black border-1 lg:w-full sm:w-full">
@@ -16,7 +20,10 @@ let PricingCard = (props) => {
           <li className="list-none">{list3}</li>
         </div>
 
-        <button className="bg-black font-bold py-2 px-4 rounded text-white w-full hover:bg-slate-500">
+        <button
+          className="bg-black font-bold py-2 px-4 rounded text-white w-full hover:bg-slate-500"
+          onClick={handleSignUp}
+        >
           Sign Up
         </button>
       </div>

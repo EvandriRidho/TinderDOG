@@ -1,11 +1,13 @@
 import Button from "../Elements/Button/button";
 
 let Navbar = () => {
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     window.location.href = "/login";
   };
 
-  const handleSignUp = () => {
+  const handleSignUp = (e) => {
+    e.preventDefault();
     window.location.href = "/register";
   };
   return (
@@ -16,12 +18,14 @@ let Navbar = () => {
           <Button
             classname="bg-black md:mx-2 lg:mx-4 hover:bg-slate-500"
             onClick={handleLogin}
+            type="submit"
           >
             Login
           </Button>
           <Button
             classname="bg-black md:mx-2 lg:mx-4 hover:bg-slate-500"
             onClick={handleSignUp}
+            type="submit"
           >
             Sign Up
           </Button>

@@ -39,13 +39,19 @@ let RegisterPage = () => {
           />
         </div>
 
-        <a href="#" className="font-bold hover:text-slate-600">
-          Forget Password
-        </a>
+        <div className="flex flex-col gap-2 w-full">
+          <label htmlFor="password">Confirm Password</label>
+          <input
+            type="confirmpassword"
+            name="confirmpassword"
+            placeholder="**********"
+            className="h-10 rounded-md border px-3"
+          />
+        </div>
 
         <button
           type="button"
-          className="border bg-black text-white rounded-md h-10 hover:bg-slate-600"
+          className="border bg-black text-white rounded-md h-10 hover:bg-slate-600 mt-4"
         >
           Sign Up
         </button>
