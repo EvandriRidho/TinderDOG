@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import InputForm from "../Elements/Input/Index";
 
 const RegisterForm = () => {
   return (
@@ -7,37 +6,45 @@ const RegisterForm = () => {
       <h1 className="font-bold text-3xl">Sign Up</h1>
       <p className="text-slate-500">Welcome! please enter your details.</p>
 
-      <InputForm
-        label="Fullname"
-        id="fullname"
-        name="fullname"
-        type="text"
-        placeholder="Enter your fullname"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="fullname">Fullname</label>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Enter your fullname"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
-      <InputForm
-        label="Email"
-        id="email"
-        name="email"
-        type="text"
-        placeholder="Example@gmail.com"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Example@gmail.com"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
-      <InputForm
-        label="Password"
-        id="password"
-        name="password"
-        type="password"
-        placeholder="***********"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="***********"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
-      <InputForm
-        label="Confirm Password"
-        id="confirmPassword"
-        name="confirmPassword"
-        type="password"
-        placeholder="***********"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="confirmpassword">Confirm Password</label>
+        <input
+          type="password"
+          name="confirmpassword"
+          placeholder="***********"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
       <button className="bg-black text-white h-10  rounded-md mt-4 hover:bg-slate-600">
         Sign Up

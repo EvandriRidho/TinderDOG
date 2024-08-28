@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import InputForm from "../Elements/Input/Index";
 
 let LoginForm = () => {
   return (
@@ -7,21 +6,25 @@ let LoginForm = () => {
       <h1 className="font-bold text-3xl">Login</h1>
       <p className="text-slate-500">Welcome back! please enter your details.</p>
 
-      <InputForm
-        label="Email"
-        id="email"
-        name="email"
-        type="text"
-        placeholder="Example@gmail.com"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="Example@gmail.com"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
-      <InputForm
-        label="Password"
-        id="password"
-        name="password"
-        type="password"
-        placeholder="***********"
-      />
+      <div className="flex flex-col gap-2 w-full">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="***********"
+          className="h-10 rounded-md border px-3"
+        />
+      </div>
 
       <a href="#" className="font-bold hover:text-slate-600">
         Forget Password
